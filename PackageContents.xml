@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage
+  SchemaVersion="1.0"
+  AppVersion="2.0.0"
+  Author="Gilles Chanteau"
+  ProductCode="{2E40D56A-9DC7-4E0C-9050-F9F944A559B1}"
+  UpgradeCode="{6D083146-5208-4EA5-806C-B75BC47D2CAF}"
+  Name="Custom Curves"
+  Description="Draws catenary, prabola or basket-handle curves."
+  DescriptionFra="Dessine une chainette, une parabole ou une anse de panier."
+  AutodeskProduct="AutoCAD"
+  ProductType="Application">
+  <CompanyDetails
+    Name="Gilles Chanteau"
+    Email="gilecad@orange.fr"
+    Url="http://gilecad.azurewebsites.net/" />
+  <Components Description="2013 to 2019 parts">
+    <RuntimeRequirements OS="Win32|Win64" Platform="AutoCAD*" SeriesMin="R19.0" SeriesMax="R23.0" />
+    <ComponentEntry
+      AppName="Custom Curves"
+      Version="2.0.0"
+      ModuleName="./Contents/CustomCurves.dll"
+      AppDescription="Draws catenary, prabola or basket-handle curves."
+      AppDescriptionFra="Dessine une chainette, une parabole ou une anse de panier."
+      LoadOnAutoCADStartup="True">
+    </ComponentEntry>
+  </Components>
+</ApplicationPackage>
